@@ -57,3 +57,47 @@ def cube(num):
     return num*num*num
 
 print(cube(3))
+
+
+def max_num(num1, num2, num3):
+    if num1 >= num2 and num1 >= num3:
+        return num1
+    elif num2 >= num1 and num2 >= num2:
+        return num2
+    else:
+        return num3
+    
+print(max_num(10, 40, 5))
+
+
+print("------------------------------- calculator")
+
+value_one = float(input("Input first number: "))
+operator = input("add operator: ")
+value_two = float(input("Input the second number: "))
+
+supported_operators = ["+", "-", "*", "/"]
+
+def check_operator(operator):
+    if operator not in supported_operators:
+        print("invalid operator")
+    else:
+        return True
+
+def calculate(value_one, value_two, operator):
+    # confirm_operator = check_operator(operator)
+    
+    if not check_operator(operator):
+        return None
+    if operator == supported_operators[0]:
+        print(value_one + value_two)
+    elif operator == supported_operators[1]:
+        print(value_one - value_two)
+    elif operator == supported_operators[2]:
+        print( value_one * value_two)
+    elif operator == supported_operators[3]:
+        print(value_one / value_two)
+    
+
+    
+calculate(value_one, value_two, operator)
