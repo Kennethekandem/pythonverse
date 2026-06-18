@@ -24,3 +24,36 @@ print(counted_string[3])
 print(squares)
 print(squares[2])
 print(squares[-1])
+
+print(f"hello, how old are you?")
+inputted = int(input())
+
+
+lucky_numbers = [4, 8, 15, 16, 24]
+friends = ["karen", "lucky", "max", "jon"]
+friends.extend(lucky_numbers)
+
+print(f"you are {inputted} years old")
+print(friends)
+
+#----------------------
+# tuples
+
+coordinates = (4,2)
+print(coordinates)
+
+
+def sayhi(value):
+    if(value <= 25):
+        print(f"hello, you are {value} years old? are you sure?")
+    else: 
+        print(f"man you are old. you mean you are {value} years old! 😳")
+
+sayhi(inputted)
+
+print("-------------------------")
+
+def cube(num):
+    return num*num*num
+
+print(cube(3))
