@@ -1,3 +1,4 @@
+
 print("   /|")
 print("  / |")
 print(" /  |")
@@ -201,3 +202,30 @@ def translate(phrase):
     return translation
 
 print(translate(input("enter a phrase:")))
+
+
+print("--------- try/catch")
+
+try:
+    print(int(input("enter a number: ")))
+except ZeroDivisionError as err: 
+    print(f"Error: {err}")
+except ValueError:
+    print("invalid input")
+
+
+print("--------------Read file")
+
+employee_file = open("employees.txt", "r")
+
+# print(employee_file.readable())
+
+if employee_file.readable():
+    print(True)
+else:
+    print('not readable')
+
+for employee in employee_file.readlines():
+    print(employee)
+
+employee_file.close()
