@@ -152,3 +152,35 @@ if out_of_guesses:
     print("out of guesses -- lost!")
 else:
     print("you win!")
+
+print("-----------------------for loops")
+
+letters = ["Forbidden", "Hate", "Redemption"]
+
+# for letter in letters:
+#     print(letter)
+
+for index in range(len(letters)):
+    print(letters[index])
+
+def raise_to_power(base_num, pow_num):
+    result = 1
+    for i in range(pow_num):
+        result = result * base_num
+    return result
+
+print(f"it is raised to -- {raise_to_power(3, 4)}")
+
+print("----------nested for loop & 2D grid")
+number_grid = [
+    [1, 2, 2, 4],
+    [5, 6, 7, 8],
+    [9, 9, 9],
+    [0]
+]
+
+print(number_grid[0][2])
+
+for row in number_grid:
+    for col in row:
+        print(col)
