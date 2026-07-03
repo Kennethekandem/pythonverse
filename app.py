@@ -186,7 +186,7 @@ for row in number_grid:
         print(col)
 
 
-print("--------------global translator")
+print("--------------global translator ----")
 
 def translate(phrase):
     translation = ""
