@@ -1,4 +1,5 @@
 import useful_tools
+from phone import Phone
 # print("   /|")
 # print("  / |")
 # print(" /  |")
@@ -70,57 +71,6 @@ import useful_tools
     
 # print(max_num(10, 40, 5))
 
-
-
-# print("---------------- dictionary")
-
-# monthConversions = {
-#     "Jan": "January",
-#     "Feb": "February",
-#     "Mar": "March",
-#     "Apr": "April",
-#     "May": "May",
-#     "Jun": "June",
-#     "Jul": "July",
-#     "Aug": "August",
-#     "Sep": "September",
-#     "Oct": "October",
-#     "Nov": "November",
-#     "Dec": "December"
-# }
-
-# print(monthConversions["Nov"])
-# print(monthConversions.get("Love", "Not a valid key!"))
-
-# i = 1
-
-# while i <= 20:
-#     print(i)
-#     i+=1
-
-# print("done with the loop")
-
-
-# print("---------game time!")
-
-# secret_word = "giraffe"
-# guess = ""
-# guess_count = 0
-# guess_limit = 3
-# out_of_guesses = False
-
-# while guess != secret_word and not(out_of_guesses):
-#     if guess_count < guess_limit:
-#         guess = input("Enter your guess:")
-#         guess_count += 1
-#     else: 
-#         out_of_guesses = True
-
-# if out_of_guesses:
-#     print("out of guesses -- lost!")
-# else:
-#     print("you win!")
-
 # print("-----------------------for loops")
 
 # letters = ["Forbidden", "Hate", "Redemption"]
@@ -180,3 +130,6 @@ print(counts)
 
 
 print(useful_tools.roll_dice(int(input("add a number: "))))
+
+iphone = Phone("iPhone 16", "li-Ion battery x3", "6x4", "active", True)
+print(iphone.battery)
