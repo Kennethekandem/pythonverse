@@ -1,5 +1,7 @@
 import useful_tools
-from phone import Phone
+from Phone import Phone
+from Chef import Chef
+from JapaneseChef import JapaneseChef
 # print("   /|")
 # print("  / |")
 # print(" /  |")
@@ -132,4 +134,12 @@ print(counts)
 print(useful_tools.roll_dice(int(input("add a number: "))))
 
 iphone = Phone("iPhone 16", "li-Ion battery x3", "6x4", "active", True)
+iphonex = Phone("iPhone X", "li-Ion battery x1", "4x4", "in-active", False)
 print(iphone.battery)
+# print(iphone.check_status())
+print(f"checking status for {iphone.name}: {iphone.check_status()}")
+print(f"checking status for {iphonex.name}: {iphonex.check_status()}")
+chef = Chef()
+print(chef.make_special_dish())
+japaneseChef = JapaneseChef()
+print(japaneseChef.make_special_dish())
